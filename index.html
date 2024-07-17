@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerte o número</title>
+
+    <link rel="shortcut icon" href="./imgs/banner.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <main>
+        <section class="conteiner">
+
+            <img src="./imgs/interrogacao.png" alt="" class="container__img">
+
+            <h1 class="titulo">Advinha o número</h1>
+
+            <div class="conteiner__conteudo">
+                <p>Prepare-se para testar suas habilidades de adivinhação em um desafio divertido e emocionante. </p>
+                <p class=" destaque"> O número sorteado está entre 1 e 100. <br> </p>
+                <span>Boa sorte!</span>
+            </div>
+            <div class=" container__checar">
+                <input type="number" placeholder="Seu palpite" id="advinha_input" class="advinha_input">
+
+                <button onclick="checarAdvinha()" id="advinha__btn" class="advinha__btn">Advinhar</button>
+            </div>
+
+            <div class="conteiner__resposta">
+                <p id="resposta" class="resposta"></p>
+                <div class="conteiner__resposta--img">
+
+                    <img src="./imgs/acertou.svg" alt="" class="" id="acertou" class="acertou">
+                    <img src="./imgs/chuteAlto.svg" alt="" class="" id="alto" class="alto">
+                    
+                <img src="./imgs/chuteBaixo.svg" alt="" class="" id="baixo" class="baixo">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+<script src="./index.js"></script>
+
+</html>

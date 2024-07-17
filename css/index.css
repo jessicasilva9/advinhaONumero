@@ -1,0 +1,157 @@
+main {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    background-image: url('/imgs/banner.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100wh;
+    font-family: "Montserrat", sans-serif;
+}
+
+.conteiner {
+    text-align: center;
+    background-color: rgb(242, 242, 248, 0.5);
+    margin: 2rem;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+}
+
+.container__img {
+    width: 10rem;
+    margin-top: 3rem;
+
+}
+
+.titulo {
+    font-size: 2rem;
+}
+
+.conteiner__conteudo {
+    text-align: justify;
+    font-size: 1.3rem;
+    margin: 1rem;
+}
+
+.destaque {
+    font-weight: bold;
+}
+
+.container__advinha {
+    /* background-color: chocolate; */
+    padding: 0.5rem;
+    display: flex;
+    column-gap: 6px;
+    justify-content: center;
+
+}
+
+input,
+button {
+    border-radius: 8px;
+    border: solid 2px #72c239;
+}
+
+input[type="number"] {
+    font-size: 18px;
+    /* font-weight: bold; */
+    text-align: center;
+}
+
+input {
+    height: 2rem;
+    width: 8rem;
+    font-size: 1rem;
+    justify-content: center;
+
+}
+
+
+.input[type="number"] {
+    font-size: 1.4rem;
+
+}
+
+button {
+    height: 2.5rem;
+    width: 6rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: #308a06;
+    background-color: #ABE054;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #07a03a;
+    background-color: #d9f3af;
+}
+
+
+.conteiner__resposta--img img {
+    width: 6rem;
+    display: none;
+    margin-left: 7rem;
+}
+
+.conteiner__resposta {
+    /* background-color: #ABE054; */
+    margin: 1rem 0;
+
+}
+
+.resposta {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+/* !laptop */
+@media (min-width: 800px) {
+    .container {
+        height: 40%;
+    }
+
+    .titulo {
+        font-size: 3rem;
+        font-weight: bold;
+        text-shadow: 2px 2px 6px rgba(38, 185, 19);
+    }
+
+    .conteiner__conteudo {
+        margin: 2rem;
+        font-size: 1.5rem;
+        width: 50rem;
+    }
+
+    .destaque {
+        margin: 10px;
+    }
+
+    input {
+        width: 12rem;
+        height: 3rem;
+    }
+
+    button {
+        width: 8rem;
+        height: 3.2rem;
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-left: 2rem;
+    }
+
+    .conteiner__resposta--img img {
+        margin-left: 25rem;
+    }
+}
+
+/* !tablet */
+@media (min-width: 768px){
+    .conteiner__resposta--img img {
+        margin-left: 20em;
+    }
+    .container{
+        height: 50rem;
+    }
+}
